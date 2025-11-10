@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3 {
+    color: #333;
+}
+p {
+    color: #666;
+}
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header styling */
+  .header {
+    padding: 80px;
+    text-align: center;
+    background-color: #53d8bd; /* Green background */
+    color: white;
+  }
+  
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  /* Background image */
+  body {
+    background-image: url('https://images.unsplash.com/photo-1655058402270-de7dd5838ed5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BhY2UlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .section {
+    text-align: center;
+    padding-top: 90px; /* Ajuste cette valeur en fonction de la hauteur de ta barre de navigation */
+    margin-top: -100px; /* Compense le padding pour que la section reste bien alignée */
+}
+
+
+   /* ______________ NAV BAR ________________ */
+  /* Navbar styling */
+  .navbar {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+  }
+  
+  /* Navbar links */
+  .nav-item {
+    color: #37ffd7; /* Text color */
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .nav-item:hover {
+    color: #1abc9c; /* Hover color */
+  }
+  
+  /* Menu and search icon styling */
+  .menu-icon, .search-icon {
+    color: #37ffd7;
+    padding: 14px 20px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .menu-icon:hover, .search-icon:hover {
+    color: #1abc9c; /* Hover color for icons */
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .nav-item {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+      margin-left: auto;
+    }
+  }
+  
+  /* Toggleable menu function */
+  .show-nav {
+    display: block !important;
+  }
+  
+
+/* Navbar menu for small screens */
+.nav-menu {
+    display: none;
+    background-color: black;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-menu a {
+    display: block;
+    color: #37ffd7;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-menu a:hover {
+    color: #1abc9c;
+}
+
+/* Show menu */
+.show {
+    display: block;
+}
+
+
+
+/* ______________ Home ________________ */
+.Home-description {
+    color: white;
+    font-family: 'Creepster', cursive !important;
+    margin-bottom: 10px;
+    font-size: 28px; /* Adjust the font size as needed */
+}
+.Home-title {
+    color: #37ffd7;
+    font-family: 'Creepster', cursive !important;
+    margin-bottom: 20px; /* Adjust the space below the h2 element */
+    font-size: 40px; /* Adjust the font size as needed */
+
+}
+
+
+
+/* ______________ MUSIC ________________ */
+.Music-head {
+    color: #911ac0;
+    font-family: 'Creepster', cursive !important;
+    margin-bottom: 60px;
+    font-size: 54px; /* Adjust the font size as needed */
+}
+.Music-title {
+    color: #37ffd7;
+    font-family: 'Creepster', cursive !important;
+    margin-bottom: 20px; /* Adjust the space below the h2 element */
+    font-size: 40px; /* Adjust the font size as needed */
+
+}
+
+.description {
+    font-size: 18px;          /* taille du texte */
+    color: rgb(255, 255, 255);              /* gris clair sur fond sombre       */    
+    line-height: 1.6;         /* espacement des lignes */
+    max-width: 900px;         /* largeur max pour la lisibilité */
+    margin: 25px auto;        /* centrer horizontalement avec un peu d’espace en haut/bas */
+    font-family: 'Helvetica', sans-serif, cursive;  /* police propre */
+    text-align: center;       /* centré pour l’effet narratif */
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+
+
+
+
+
+   /* ______________ PROJECT     ________________ */
+.PROJECT-text {
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 32px;
+}
+
+.PROJECT-title {
+    color: #911ac0;
+    font-family: 'Creepster', cursive !important;
+    margin-bottom: 20px; /* Adjust the space below the h2 element */
+    font-size: 40px; /* Adjust the font size as needed */
+
+}
+
+.PROJECT-description {
+    color: #37ffd7;
+    font-family: 'Creepster', cursive !important;
+    margin-bottom: 10px;
+    font-size: 28px; /* Adjust the font size as needed */
+
+}
+
+.additional-info {
+    color: #37ffd7; /* Adjust the color if needed */
+    font-family: 'Creepster', cursive;
+    margin-bottom: 10px; /* Adjust space below this paragraph */
+    line-height: 1.75; /* Increase line height for more space between lines */
+    font-size: 20px; /* Adjust the font size as needed */
+}
+
+
+
+
+
+
+
+   /* ______________ FOOTER ________________ */
+.custom-footer {
+    background-color: #333; /* Couleur de fond du footer avec 80% d'opacité */
+    padding: 40px 20px; /* Espacement intérieur du footer */
+    text-align: center; /* Centre le contenu du footer */
+    transition: background-color 0.1s ease; /* Animation fluide de la couleur de fond */
+    opacity: 0.7;
+}
+
+
+.footer-content i {
+    font-size: 60px; /* Taille des icônes */
+    color: #37ffd7; /* Couleur dorée des icônes */
+    padding: 10px; /* Espacement autour des icônes */
+    transition: color 0.3s ease; /* Animation fluide de la couleur */
+}
+
+.footer-content i:hover {
+    color: #f200fa; /* Couleur dorée plus claire au survol */
+}
+
+.footer-text {
+    color: #37ffd7; /* Couleur du texte */
+    font-size: 28px; /* Taille du texte */
+    margin: 10px 0; /* Marge autour du texte */
+}
+
+.footer-button {
+    display: inline-block; /* Aligne le bouton avec le texte */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    background-color:  #911ac0; /* Couleur de fond du bouton */
+    color: #53ffdd; /* Couleur du texte du bouton */
+    border-radius: 20px; /* Bords arrondis du bouton */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    font-size: 16px; /* Taille du texte du bouton */
+    transition: background-color 0.3s ease; /* Animation fluide du fond */
+}
+
+.footer-button:hover {
+    background-color: #f200fa; /* Couleur de fond du bouton au survol */
+}
